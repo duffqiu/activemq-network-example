@@ -6,7 +6,7 @@
 - the overview idea is there is no need to reconfigure or restart brokers in hub and other running edge brokers when adding more edge broker to support more capacity of the activemq network
 - each block in the diagram (named Corex-x and Edgex-x-x) is an activemq master/slave cluster (but not configured in this example, to use leveldb is better but maybe need to consider how to setup zookeeper with it)
 - there is some limitation about "replay" in network broker for queue (also for virtual queue), i have raised an issue for it [issue](https://issues.apache.org/jira/browse/AMQ-5827) 
-- if need, the consumer/producer can setup the failover uri to another broker in another availabe zoon (the dot line)
+- normally, there is a load balancer between app and edge brokers
  
 
 ### Some tips:
