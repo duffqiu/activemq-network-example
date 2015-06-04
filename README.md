@@ -1,6 +1,6 @@
 ### activemq network broker example deployment
 
-
+![topology](Amq-topology.png)
 
 - this simple project is used to simulate the activemq hub topology to support scale-out/scale-in
 - the overview idea is there is no need to reconfigure or restart brokers in hub and other running edge brokers when adding more edge broker to support more capacity of the activemq network
